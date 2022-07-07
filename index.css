@@ -1,7 +1,7 @@
 .container{
-    margin: 20px;
+    margin: 3%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: 300px 300px;
 }
 .el1{
@@ -9,6 +9,8 @@
     background-repeat: no-repeat;
     background-position: top right;
     background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 3;
     margin: 10px;
@@ -45,25 +47,110 @@
     margin: 10px;
     padding: 14px;
 }
-p{
-    font-size: 13px;
+.title{
+    display: inline-block;
+    margin-left: 20px;
 }
-.header{
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-.headers{
-    font-size: 18px;
-    font-weight: bold;
-}
+
 img{
     border-radius: 50%;
     width: 30px;
 }
-#header{
+.t-title{
+    color: white;
+    font-weight: bold;
+}
+#t-title{
     color: white;
 }
-#spa{
+.sec-t-title{
+    color: black;
+    font-weight: bold;
+}
+#sec-t-title{
+    color: black;
+}
+.header{
+    font-size: 19px;
+    font-weight: bolder;
     color: white;
+}
+.pg{
+    font-size: 16px;
+    color: white;
+}
+
+#header{
+    font-size: 19px;
+    font-weight: bolder;
+    color: black;   
+}
+#pg{
+    font-size: 16px;
+    color: black;
+}
+
+@media (max-width: 600px){
+   body{
+    background-color: brown;
+   }
+   .container{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+}  
+   .el1{
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: blueviolet;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.el2{
+    background-color: gray;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.el3{
+    background-color:aliceblue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.el4{
+    background-color: aliceblue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+.el5{
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 14px;
+}
 }
